@@ -34,8 +34,9 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
-    "@babel/preset-react": "^7.9.4",
+    "@babel/preset-react": "^7.10.4",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.8.0",
     "rimraf": "3.0.0",
@@ -65,5 +66,14 @@
     "styled-components": "^5.0.0",
     "whatwg-fetch": "^2.0.3"
   },
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  ],
   "gitHead": "c85658a19b8fef0f3164c19693a45db305dc07a9"
 }
